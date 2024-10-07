@@ -1,0 +1,130 @@
+@use 'variables' as v;
+
+/** Media Queries **/
+@mixin telefono {
+    @media (min-width: v.$telefono) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media (min-width: v.$tablet) {
+        @content;
+    }
+}
+@mixin tabletl {
+    @media (min-width: v.$tabletl) {
+        @content;
+    }
+}
+@mixin tabletxl {
+    @media (min-width: v.$tabletxl) {
+        @content;
+    }
+}
+@mixin desktop {
+    @media (min-width: v.$desktop) {
+        @content;
+    }
+}
+@mixin desktopxl {
+    @media (min-width: v.$desktopxl) {
+        @content;
+    }
+}
+
+
+@mixin boton($bgColor, $colorTexto) {
+    background-color: $bgColor;
+    padding: 1.5rem 3rem;
+    color: $colorTexto;
+    //margin-top: 2rem;
+    font-size: 1.3rem;
+    font-weight: 300;
+    display: inline-block;
+    //font-weight: 700;
+    border: none;
+    border-radius: 3rem;
+    transition-property: background-color;
+    transition-duration: .3s;
+    //text-align: center;
+    //display: block;
+    //width: 100%;
+    margin: 1rem 0;
+
+    @include tablet {
+        width: auto;
+    }
+    &:hover {
+        background-color: darken( $bgColor, 10% );
+        cursor: pointer;
+    }
+}
+
+@mixin grid($columnas, $espaciado ) {
+    display: grid;
+    gap: $espaciado;
+    grid-template-columns: repeat($columnas, 1fr);
+}
+
+@mixin contenedor-sm{
+    width: min(95%, 40rem); 
+    margin: 0 auto;
+}
+@mixin contenedor {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+@mixin contenedor100{
+    width: min(100%, 120rem); //igual que las 2 lineas de arriba...  menor a 1200px toma 95% y mayor a 1200px muestra los 1200ox
+    margin: 0 auto;
+}
+@mixin contenedorxl{
+    //max-width: 120rem;
+    //width: 95%;
+    width: min(95%, 140rem); 
+    margin: 0 auto;
+}
+
+@mixin texto_fluido($min, $max){
+    font-size: clamp($min, -0.8rem + 10vw , $max);
+}
+
+@mixin sombra {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;    
+}
+
+@mixin menu-social($color, $size) {
+    &__enlace{ // = <a>...</a>
+        &::before{
+            color: $color;
+            font-size: $size;
+            display: inline-block; // para que se ponga el elemento al lado de otro se puede aplicar pading
+            font-style: normal;
+            text-rendering: auto; //propiedad que se aplica a vectores
+            -webkit-font-smoothing: antialiased;
+            font-family: "Font Awesome 6 brands";
+        }
+        &[href*="https://facebook.com"]::before{
+            content: "\f39e";
+        }
+        &[href*="https://github.com"]::before{
+            content: "\f09b";
+        }
+        &[href*="https://tiktok.com"]::before{
+            content: "\e07b";
+        }
+        &[href*="https://instagram.com"]::before{
+            content: "\f16d";
+        }
+        &[href*="https://twitter.com"]::before{
+            content: "\f099";
+        }
+        &[href*="https://youtube.com"]::before{
+            content: "\f167";
+        }
+    }
+    &__ocultar{ //== <span></span>
+        display: none;
+    }
+}
