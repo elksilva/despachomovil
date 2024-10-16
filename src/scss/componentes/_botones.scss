@@ -1,0 +1,129 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+//tamaño de botones
+.btn-xs{
+    display: inline-block;
+    width: auto;
+    font-size: 1.1rem;
+    padding: .4rem .8rem;
+    border-radius: 1rem;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn-md{
+    display: inline-block;
+    width: auto;
+    font-size: 1.5rem;
+    padding: .6rem 2.3rem;
+    border-radius: 1rem;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn-lg{
+    display: inline-block;
+    width: auto;
+    font-size: 1.7rem;
+    font-weight: 600;
+    padding: .8rem 2.8rem;
+    border-radius: 1rem;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+//colores de botones
+.btn-amarillo{
+    background-color:v.$amarillo;
+    border-color:v.$amarillo;
+    color: v.$negro;
+    &:hover{
+        background-color: darken(v.$amarillo, 15);
+        border-color: darken(v.$amarillo, 15);
+    }
+}
+
+/*
+.btn-blue{
+    background-color:v.$azul;
+    border-color:v.$azul;
+    color: v.$blanco;
+    &:hover{
+        background-color: darken(v.$azul, 15);
+        border-color: darken(v.$azul, 15);
+    }
+}
+.btn-red{
+    background-color:v.$rojo;
+    border-color:v.$rojo;
+    color: v.$blanco;
+    &:hover{
+        background-color: darken(v.$rojo, 15);
+        border-color: darken(v.$rojo, 15);
+    }
+}
+.btn-green{
+    background-color:v.$verde1;
+    border-color:v.$verde1;
+    color: v.$blanco;
+    &:hover{
+        background-color: darken(v.$verde1, 15);
+        border-color: darken(v.$verde1, 15);
+    }
+}
+.btn-pink{
+    background-color:v.$rosa;
+    border-color:v.$rosa;
+    color: v.$blanco;
+    &:hover{
+        background-color: darken(v.$rosa, 15);
+        border-color: darken(v.$rosa, 15);
+    }
+}
+.btn-orange{
+    background-color:v.$barprogress;
+    border-color:v.$barprogress;
+    color: v.$blanco;
+    &:hover{
+        background-color: darken(v.$barprogress, 15);
+        border-color: darken(v.$barprogress, 15);
+    }
+}
+.btn-turquoise{
+    background-color:v.$secundario;
+    border-color:v.$secundario;
+    color: v.$blanco;
+    &:hover{
+        background-color: darken(v.$secundario, 15);
+        border-color: darken(v.$secundario, 15);
+    }
+}
+.btn-light{
+    background-color:v.$blanco;
+    border-color:lighten( v.$grisraton, 7);
+    color: v.$grisblack;
+    &:hover{
+        background-color: darken(v.$blanco, 15);
+        border-color: darken(v.$blanco, 15);
+    }
+}
+.btn-dark{
+    background-color:v.$grisblack;
+    border-color: v.$grisblack;
+    color: v.$blanco;
+    &:hover{
+        background-color: darken(v.$grisclaro, 0);
+        color: v.$grisoscuro;
+        border-color: lighten(v.$grisoscuro, 10);
+    }
+}
+.btn-locked{
+    background-color:v.$griswhite;
+    border-color:darken(v.$grisclaro, 7);
+    color: darken(v.$grisclaro, 7);
+    &:hover{
+        cursor: auto;
+    }
+}
+*/

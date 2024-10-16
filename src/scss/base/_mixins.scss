@@ -6,6 +6,11 @@
         @content;
     }
 }
+@mixin tabletxs {
+    @media (min-width: v.$tabletxs) {
+        @content;
+    }
+}
 @mixin tablet {
     @media (min-width: v.$tablet) {
         @content;
