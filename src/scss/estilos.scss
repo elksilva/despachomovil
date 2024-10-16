@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    z-index: 100;
 }
 
 body {
@@ -168,12 +169,18 @@ body {
 }
 
 .hero__content {
-    max-width: 600px;
-    margin-left: 4rem;
+    max-width: 800px;
+    margin-left: -1rem;
+}
+
+.hero__texto {
+    margin-left: 8rem;
+    margin-bottom: 4.5rem;
+    margin-top: -8rem;
 }
 
 .hero__content h2 {
-    font-size: 48px;
+    font-size: 35px;
     font-weight: bold;
     color: #f1c40f;
     text-align: left;
@@ -181,8 +188,8 @@ body {
 
 .hero__content p {
     margin-top: 20px;
-    font-size: 18px;
-    line-height: 1.5;
+    font-size: 24px;
+    line-height: 1.2;
 }
 
 .divider {
@@ -206,6 +213,10 @@ body {
     border-radius: 50%; 
 }
 
+.hero__image {
+    position: relative;
+}
+
 .hero__image img {
     width: auto;
     height: 470px;
@@ -215,12 +226,38 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px 20px;
-    background-color: #004b23;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('/build/img/HOME/curva1.png');
+    background-size: cover;
+    background-position: center;
+    z-index: 3;
+    margin-top: -465px; 
 }
 
 .abogados__content {
     text-align: center;
+    position: relative;
+}
+
+.abogados__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 4px;
+    margin-top: 350px;
+}
+
+.abogados__titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    line-height: 2;
 }
 
 .abogados__content i {
@@ -230,18 +267,22 @@ body {
 
 .abogados__content h3 {
     margin-top: 20px;
-    font-size: 28px;
-    font-weight: bold;
+    font-size: 35px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 500;
 }
 
 .abogados__content h3 span {
-    background-color: #1d3557;
+    background-color: #1c2f3f;
     padding: 5px 10px;
-    border-radius: 5px;
+    border-radius: 25px;
+    font-weight: 500;
 }
 
 .abogados__content p {
-    margin-top: 10px;
-    font-size: 16px;
-    color: #bfbfbf;
+    font-size: 27px;
+    max-width: 77%;
+    margin: 10px auto 0 auto;
+    font-weight: 200;
 }
