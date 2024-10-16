@@ -225,7 +225,7 @@ body {
 
 .abogados {
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
     position: relative;
     width: 100%;
@@ -233,8 +233,8 @@ body {
     background-image: url('/build/img/HOME/curva1.png');
     background-size: cover;
     background-position: center;
-    z-index: 3;
-    margin-top: -465px; 
+    z-index: 4;
+    margin-top: -465px;   
 }
 
 .abogados__content {
