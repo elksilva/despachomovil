@@ -224,7 +224,7 @@ body {
 
 .abogados {
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
     position: relative;
     width: 100%;
@@ -233,7 +233,7 @@ body {
     background-size: cover;
     background-position: center;
     z-index: 3;
-    margin-top: -465px; 
+    margin-top: -465px;   
 }
 
 .abogados__content {
