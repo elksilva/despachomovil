@@ -1,0 +1,35 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.tema{
+  padding: 3rem 1rem;
+  text-align: center;
+  h3{
+    color: v.$blanco;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+  }
+  p{
+    font-weight: 300;
+    width: 32rem;
+    text-align: center;
+    margin: 0 auto;
+    color: aliceblue;
+    span{
+      font-weight: 700;
+    }
+  }
+}
+
+.profesionales{
+  background-color: v.$blanco;
+  
+  .grid-profesionales{
+    @include m.contenedor;
+    @include m.grid(3, 1rem);
+    .profesional{
+      height: 10rem;
+      background-color: aqua;
+    }
+  }
+}
