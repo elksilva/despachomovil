@@ -12,11 +12,11 @@
       border-top-right-radius: 8rem;
       width: 96%;
       text-align: center;
+      padding: 2rem 5rem;
       @include m.tabletxs{
         display: flex;
         justify-content: space-between;
       }
-      padding: 2rem 5rem;
       img{
         width: 30rem;
         height: 12rem;
@@ -110,12 +110,12 @@
 
   &__politicas{
     text-align: center;
+    padding: 1rem 0 7rem 0;
     @include m.tablet{
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
-    padding: 1rem 0 7rem 0;
     .politica{
       color: rgb(162, 163, 163);
       font-weight: 300;

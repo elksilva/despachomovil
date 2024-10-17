@@ -2,7 +2,7 @@
 @use 'base/mixins' as m;
 
 .tema{
-  padding: 3rem 1rem;
+  padding: 6rem 1rem;
   text-align: center;
   h3{
     color: v.$blanco;
@@ -30,6 +30,22 @@
     .profesional{
       height: 10rem;
       background-color: aqua;
+      display: flex;
+      .imgprofesional{
+        width: 10rem;
+      }
+      .infoprofesional{
+        .nombreProfesional{
+
+        }
+        .profesion{
+
+        }
+        .verperfil{
+
+        }
+      }
     }
   }
+
 }
