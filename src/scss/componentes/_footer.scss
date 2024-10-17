@@ -1,0 +1,152 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.footerBar{
+  background-color: rgb(236, 240, 241);
+  display: flex;
+  flex-direction: column;
+  &__superior{
+    background-color: v.$blanco;
+    .superiorContent{
+      background-color: rgb(236, 240, 241);
+      border-top-right-radius: 8rem;
+      width: 96%;
+      text-align: center;
+      @include m.tabletxs{
+        display: flex;
+        justify-content: space-between;
+      }
+      padding: 2rem 5rem;
+      img{
+        width: 30rem;
+        height: 12rem;
+      }
+    }
+  }
+
+  &__inferior{
+    background-color: rgb(44, 62, 80);
+    border-top-left-radius: 8rem;
+    width: 90%;
+    align-self: flex-end;
+    padding: 0 5rem;
+    position: relative;
+  }
+  &__inferiorContent{
+    border-bottom: 1px solid rgb(162, 163, 163);
+    padding-bottom: 3rem;
+    @include m.tabletl{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+  }
+  &__nav{
+    img{
+      max-width: 24rem;
+    }
+    nav{
+      padding-left: 2rem;
+      text-align: center;
+      @include m.tabletxs{
+        display: flex;
+        justify-content: center;
+      }
+      a{
+        display: block;
+        color: v.$amarillo;
+        font-size: 2.2rem;
+        padding: 0rem 1rem;
+        font-weight: 300;
+        margin-bottom: 1rem;
+        @include m.tabletl{
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  &__suscripcion{
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 1rem;
+    width: 100%;
+    max-width: 33rem;
+    margin: 0 auto;
+    @include m.tabletl{
+      margin: 0;
+    }
+    .suscribir{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: .5rem;
+      width: 100%;
+      max-width: 22rem;
+      .textSuscribir{
+        color: v.$blanco;
+        font-size: 1.3rem;
+        font-weight: 300;
+      }
+      .campoSuscribir{
+        width: 100%;
+        outline: none;
+        font-size: 1.2rem;
+        font-weight: 300;
+        padding: .6rem 1.7rem;
+        border: 3px solid v.$blanco;
+        border-radius: 1rem;
+        &:focus{
+          background-color: rgb(236, 240, 241);
+        }
+      }
+
+    }
+    .inputSuscribir{
+      //background-color: v.$amarillo;
+    }
+  }
+
+  &__politicas{
+    text-align: center;
+    @include m.tablet{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    padding: 1rem 0 7rem 0;
+    .politica{
+      color: rgb(162, 163, 163);
+      font-weight: 300;
+      font-size: 1.1rem;
+      padding-right: 1rem;
+      &:nth-of-type(1){
+        border-right: 1px solid rgb(162, 163, 163);
+      }
+      &:nth-of-type(2){
+        padding-left: .5rem;
+        border-right: 1px solid rgb(162, 163, 163);
+      }
+      &:nth-of-type(3){
+        padding-left: .5rem;
+      }
+    }
+    .allright{
+      color: rgb(162, 163, 163);
+      font-weight: 300;
+      font-size: 1rem;
+    }
+  }
+
+  .logoGov{
+    background-color: rgb(28, 47, 63);
+    width: 25rem;
+    text-align: center;
+    padding: 1.5rem 1rem 1rem 1rem;
+    border-top-left-radius: 4rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
