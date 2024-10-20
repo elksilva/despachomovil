@@ -56,7 +56,7 @@
     </header>
 
     <div class="tema">
-      <img src="/build/img/PROFESIONALES/Engranajes - Profesionales.png" alt="">
+      <img loading="lazy"  src="/build/img/PROFESIONALES/Engranajes - Profesionales.png" alt="">
       <h3>Nuestros profesionales</h3>
       <p>Conoce al equipo que te guiará en la toma
         de las <span>mejores decisiones legales.</span> </p>
@@ -64,22 +64,302 @@
 
     <div class="profesionales">
 
-      <div class="grid-profesionales">
-        <div class="profesional">
-            <img class="imgprofesional" src="/build/img/HOME/FOTO PLATINUM 2.png" alt="">
-            <div class="infoprofesional">
-                <p class="nombreProfesional">Nombre del profesional</p>
-                <p class="profesion">cargo y especialidad</p>
-                <a class="verperfil" href="">Ver perfil</a>
+        <div class="camposProfesionales">
+            <div class="campoProfesional">
+                <label class="tipoFiltro" for="selectNombre">Nombre</label>
+                <select class="camposelect" name="" id="selectNombre">
+                    <option value="1">Todos</option>
+                    <option value="2">Nombre Primero</option>
+                    <option value="3">Nombre Ultimo</option>
+                </select>
             </div>
+            <div class="campoProfesional">
+                <label class="tipoFiltro" for="selectCargo">Cargo</label>
+                <select class="camposelect" name="" id="selectCargo">
+                    <option value="todos">Todos</option>
+                    <option value="cargo1">Socio</option>
+                    <option value="cargo2">Of Counsel</option>
+                    <option value="cargo3">Director</option>
+                    <option value="cargo4">Consejero</option>
+                    <option value="cargo5">Asociado</option>
+                </select>
+            </div>
+            <div class="campoProfesional">
+                <label class="tipoFiltro" for="selectEspecialidad">Especialidad</label>
+                <select class="camposelect" name="" id="selectEspecialidad">
+                    <option value="todos">Todos</option>
+                    <option value="especialidad1">Administrativo y constitucional</option>
+                    <option value="especialidad2">Aduanas y comercio exterior</option>
+                    <option value="especialidad3">Banca, Finanzas y mercado de capitales</option>
+                    <option value="especialidad4">Competencia</option>
+                    <option value="especialidad5">Corporativo</option>
+                </select>
+            </div>
+            <div class="campoProfesional">
+                <label class="tipoFiltro" for="selectIndustria">Industria</label>
+                <select class="camposelect" name="" id="selectIndustria">
+                    <option value="todos">Todos</option>
+                    <option value="industria1">Agroindustria</option>
+                    <option value="industria2">Automotriz</option>
+                    <option value="industria3">Bancario, mercado de capitales y servicios financieros</option>
+                    <option value="industria1">Bienes de consumo</option>
+                    <option value="industria2">Ciencias de la vida y cuidado de la salud</option>
+                    <option value="industria3">Construccion e inmobiliario</option>
+                </select>
+            </div>
+
         </div>
 
-        <div class="profesional"></div>
-        <div class="profesional"></div>
-        <div class="profesional"></div>
-        <div class="profesional"></div>
+      <div class="grid-profesionales">
+          <div class="oneProfesional" data-cargo="cargo1" data-especialidad="especialidad5" data-industria="">
+            <div class="profesional">
+                <img class="imgprofesional" src="/build/img/HOME/FOTO PLATINUM 2.png" alt="">
+                <div class="infoprofesional">
+                    <p class="nombreProfesional">Nombre del profesional 1</p>
+                    <p class="profesion">Socio y Corporativo</p>
+                    <a class="verperfil btn-xs btn-verdegradiante" href="">Ver perfil <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+          </div>
+          <div class="oneProfesional" data-cargo="cargo2" data-especialidad="especialidad1" data-industria="">
+            <div class="profesional">
+                <img class="imgprofesional" src="/build/img/HOME/FOTO PLATINUM.png" alt="">
+                <div class="infoprofesional">
+                    <p class="nombreProfesional">Nombre del profesional 2</p>
+                    <p class="profesion">Of Counsel y Administrativo y constitucional</p>
+                    <a class="verperfil btn-xs btn-verdegradiante" href="">Ver perfil <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+          </div>
+          <div class="oneProfesional" data-cargo="cargo2" data-especialidad="especialidad5" data-industria="">
+            <div class="profesional">
+                <img class="imgprofesional" src="/build/img/HOME/FOTO GOLD.png" alt="">
+                <div class="infoprofesional">
+                    <p class="nombreProfesional">Nombre del profesional 3</p>
+                    <p class="profesion">Of Counsel y Corporativo</p>
+                    <a class="verperfil btn-xs btn-verdegradiante" href="">Ver perfil <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+          </div>
+          <div class="oneProfesional" data-cargo="cargo3" data-especialidad="especialidad5" data-industria="">
+            <div class="profesional">
+                <img class="imgprofesional" src="/build/img/HOME/FOTO SILVER 2.png" alt="">
+                <div class="infoprofesional">
+                    <p class="nombreProfesional">Nombre del profesional 4</p>
+                    <p class="profesion">Director y Corporativo</p>
+                    <a class="verperfil btn-xs btn-verdegradiante" href="">Ver perfil <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+          </div>
+          <div class="oneProfesional" data-cargo="cargo4" data-especialidad="especialidad5" data-industria="">
+            <div class="profesional">
+                <img class="imgprofesional" src="/build/img/HOME/FOTO GOLD.png" alt="">
+                <div class="infoprofesional">
+                    <p class="nombreProfesional">Nombre del profesional 5</p>
+                    <p class="profesion">Consejero y Corporativo</p>
+                    <a class="verperfil btn-xs btn-verdegradiante" href="">Ver perfil <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+          </div>
+          <div class="oneProfesional" data-cargo="cargo3" data-especialidad="especialidad4" data-industria="">
+            <div class="profesional">
+                <img class="imgprofesional" src="/build/img/HOME/FOTO SILVER.png" alt="">
+                <div class="infoprofesional">
+                    <p class="nombreProfesional">Nombre del profesional 6</p>
+                    <p class="profesion">Director y Competencia</p>
+                    <a class="verperfil btn-xs btn-verdegradiante" href="">Ver perfil <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+          </div>
+          <div class="oneProfesional" data-cargo="cargo4" data-especialidad="especialidad3" data-industria="">
+            <div class="profesional">
+                <img class="imgprofesional" src="/build/img/HOME/FOTO PLATINUM.png" alt="">
+                <div class="infoprofesional">
+                    <p class="nombreProfesional">Nombre del profesional 7</p>
+                    <p class="profesion">Consejero y Banca, Finanzas y mercado de capitales</p>
+                    <a class="verperfil btn-xs btn-verdegradiante" href="">Ver perfil <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+          </div>
+          <div class="oneProfesional" data-cargo="cargo4" data-especialidad="especialidad4" data-industria="">
+            <div class="profesional">
+                <img class="imgprofesional" src="/build/img/HOME/FOTO PLATINUM 2.png" alt="">
+                <div class="infoprofesional">
+                    <p class="nombreProfesional">Nombre del profesional 8</p>
+                    <p class="profesion">Consejero y Competencia</p>
+                    <a class="verperfil btn-xs btn-verdegradiante" href="">Ver perfil <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+          </div>
+          <div class="oneProfesional" data-cargo="cargo5" data-especialidad="especialidad1" data-industria="">
+            <div class="profesional">
+                <img class="imgprofesional" src="/build/img/HOME/FOTO SILVER 2.png" alt="">
+                <div class="infoprofesional">
+                    <p class="nombreProfesional">Nombre del profesional 9</p>
+                    <p class="profesion">Asociado y Administrativo y constitucional</p>
+                    <a class="verperfil btn-xs btn-verdegradiante" href="">Ver perfil <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+          </div>
+          <div class="oneProfesional" data-cargo="cargo3" data-especialidad="especialidad2" data-industria="">
+            <div class="profesional">
+                <img class="imgprofesional" src="/build/img/HOME/FOTO PLATINUM 2.png" alt="">
+                <div class="infoprofesional">
+                    <p class="nombreProfesional">Nombre del profesional 10</p>
+                    <p class="profesion">Director y Aduanas y comercio exterior</p>
+                    <a class="verperfil btn-xs btn-verdegradiante" href="">Ver perfil <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+          </div>
+          <div class="oneProfesional" data-cargo="cargo1" data-especialidad="especialidad1" data-industria="">
+            <div class="profesional">
+                <img class="imgprofesional" src="/build/img/HOME/FOTO PLATINUM.png" alt="">
+                <div class="infoprofesional">
+                    <p class="nombreProfesional">Nombre del profesional 11</p>
+                    <p class="profesion">cargo y Administrativo y constitucional</p>
+                    <a class="verperfil btn-xs btn-verdegradiante" href="">Ver perfil <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+          </div>
+          <div class="oneProfesional" data-cargo="cargo3" data-especialidad="especialidad2" data-industria="">
+            <div class="profesional">
+                <img class="imgprofesional" src="/build/img/HOME/FOTO SILVER.png" alt="">
+                <div class="infoprofesional">
+                    <p class="nombreProfesional">Nombre del profesional 12</p>
+                    <p class="profesion">Director y Aduanas y comercio exterior</p>
+                    <a class="verperfil btn-xs btn-verdegradiante" href="">Ver perfil <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+          </div>
+          <div class="oneProfesional" data-cargo="cargo1" data-especialidad="especialidad5" data-industria="">
+            <div class="profesional">
+                <img class="imgprofesional" src="/build/img/HOME/FOTO PLATINUM 2.png" alt="">
+                <div class="infoprofesional">
+                    <p class="nombreProfesional">Nombre del profesional 1</p>
+                    <p class="profesion">Socio y Corporativo</p>
+                    <a class="verperfil btn-xs btn-verdegradiante" href="">Ver perfil <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+          </div>
+          <div class="oneProfesional" data-cargo="cargo2" data-especialidad="especialidad1" data-industria="">
+            <div class="profesional">
+                <img class="imgprofesional" src="/build/img/HOME/FOTO PLATINUM.png" alt="">
+                <div class="infoprofesional">
+                    <p class="nombreProfesional">Nombre del profesional 2</p>
+                    <p class="profesion">Of Counsel y Administrativo y constitucional</p>
+                    <a class="verperfil btn-xs btn-verdegradiante" href="">Ver perfil <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+          </div>
+          <div class="oneProfesional" data-cargo="cargo2" data-especialidad="especialidad5" data-industria="">
+            <div class="profesional">
+                <img class="imgprofesional" src="/build/img/HOME/FOTO GOLD.png" alt="">
+                <div class="infoprofesional">
+                    <p class="nombreProfesional">Nombre del profesional 3</p>
+                    <p class="profesion">Of Counsel y Corporativo</p>
+                    <a class="verperfil btn-xs btn-verdegradiante" href="">Ver perfil <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+          </div>
+          <div class="oneProfesional" data-cargo="cargo2" data-especialidad="especialidad2" data-industria="">
+            <div class="profesional">
+                <img class="imgprofesional" src="/build/img/HOME/FOTO SILVER 2.png" alt="">
+                <div class="infoprofesional">
+                    <p class="nombreProfesional">Nombre del profesional 4</p>
+                    <p class="profesion">Director y Corporativo</p>
+                    <a class="verperfil btn-xs btn-verdegradiante" href="">Ver perfil <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+          </div>
+          <div class="oneProfesional" data-cargo="cargo2" data-especialidad="especialidad3" data-industria="">
+            <div class="profesional">
+                <img class="imgprofesional" src="/build/img/HOME/FOTO GOLD.png" alt="">
+                <div class="infoprofesional">
+                    <p class="nombreProfesional">Nombre del profesional 5</p>
+                    <p class="profesion">Consejero y Corporativo</p>
+                    <a class="verperfil btn-xs btn-verdegradiante" href="">Ver perfil <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+          </div>
+          <div class="oneProfesional" data-cargo="cargo3" data-especialidad="especialidad4" data-industria="">
+            <div class="profesional">
+                <img class="imgprofesional" src="/build/img/HOME/FOTO SILVER.png" alt="">
+                <div class="infoprofesional">
+                    <p class="nombreProfesional">Nombre del profesional 6</p>
+                    <p class="profesion">Director y Competencia</p>
+                    <a class="verperfil btn-xs btn-verdegradiante" href="">Ver perfil <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+          </div>
+          <div class="oneProfesional" data-cargo="cargo4" data-especialidad="especialidad3" data-industria="">
+            <div class="profesional">
+                <img class="imgprofesional" src="/build/img/HOME/FOTO PLATINUM.png" alt="">
+                <div class="infoprofesional">
+                    <p class="nombreProfesional">Nombre del profesional 7</p>
+                    <p class="profesion">Consejero y Banca, Finanzas y mercado de capitales</p>
+                    <a class="verperfil btn-xs btn-verdegradiante" href="">Ver perfil <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+          </div>
+          <div class="oneProfesional" data-cargo="cargo4" data-especialidad="especialidad1" data-industria="">
+            <div class="profesional">
+                <img class="imgprofesional" src="/build/img/HOME/FOTO PLATINUM 2.png" alt="">
+                <div class="infoprofesional">
+                    <p class="nombreProfesional">Nombre del profesional 8</p>
+                    <p class="profesion">Consejero y Competencia</p>
+                    <a class="verperfil btn-xs btn-verdegradiante" href="">Ver perfil <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+          </div>
+          <div class="oneProfesional" data-cargo="cargo5" data-especialidad="especialidad1" data-industria="">
+            <div class="profesional">
+                <img class="imgprofesional" src="/build/img/HOME/FOTO SILVER 2.png" alt="">
+                <div class="infoprofesional">
+                    <p class="nombreProfesional">Nombre del profesional 9</p>
+                    <p class="profesion">Asociado y Administrativo y constitucional</p>
+                    <a class="verperfil btn-xs btn-verdegradiante" href="">Ver perfil <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+          </div>
+          <div class="oneProfesional" data-cargo="cargo3" data-especialidad="especialidad2" data-industria="">
+            <div class="profesional">
+                <img class="imgprofesional" src="/build/img/HOME/FOTO PLATINUM 2.png" alt="">
+                <div class="infoprofesional">
+                    <p class="nombreProfesional">Nombre del profesional 10</p>
+                    <p class="profesion">Director y Aduanas y comercio exterior</p>
+                    <a class="verperfil btn-xs btn-verdegradiante" href="">Ver perfil <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+          </div>
+          <div class="oneProfesional" data-cargo="cargo4" data-especialidad="especialidad1" data-industria="">
+            <div class="profesional">
+                <img class="imgprofesional" src="/build/img/HOME/FOTO PLATINUM.png" alt="">
+                <div class="infoprofesional">
+                    <p class="nombreProfesional">Nombre del profesional 11</p>
+                    <p class="profesion">cargo y Administrativo y constitucional</p>
+                    <a class="verperfil btn-xs btn-verdegradiante" href="">Ver perfil <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+          </div>
+          <div class="oneProfesional" data-cargo="cargo4" data-especialidad="especialidad1" data-industria="">
+            <div class="profesional">
+                <img class="imgprofesional" src="/build/img/HOME/FOTO SILVER.png" alt="">
+                <div class="infoprofesional">
+                    <p class="nombreProfesional">Nombre del profesional 12</p>
+                    <p class="profesion">Director y Aduanas y comercio exterior</p>
+                    <a class="verperfil btn-xs btn-verdegradiante" href="">Ver perfil <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+          </div>
 
+      </div> <!-- fin grid-profesionales -->
+
+      <div class="paginacionContenedor">
+          <ul class="paginationContent" id="paginationWrapper">
+              
+          </ul>
       </div>
+
     </div>
     
 
@@ -128,6 +408,6 @@
     <!--<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> efecto de escritura-->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="/build/js/app.js"></script>
+    <script type="module" src="/build/js/app.js"></script>
 </body>
 </html>

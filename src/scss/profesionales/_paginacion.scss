@@ -1,0 +1,61 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.paginacionContenedor{
+  @include m.contenedor;
+  padding: 3rem 1rem;
+  .paginationContent{ //ul
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    .contentbtnAnterior{
+      .btnAnterior{
+        display: flex;
+        align-items: center;
+        gap: .6rem;
+        border: 1px solid rgb(170, 172, 175);
+        border-radius: 0%;
+        border-top-left-radius: .8rem;
+        border-bottom-left-radius: .8rem;
+        padding: .4rem 1rem;
+        font-size: 1.3rem;
+        &:hover{
+          cursor: pointer;
+        }
+      }
+    }
+    .contentbtnSiguiente{
+      .btnSiguiente{
+        display: flex;
+        align-items: center;
+        gap: .6rem;
+        border: 1px solid rgb(170, 172, 175);
+        border-radius: 0%;
+        border-top-right-radius: .8rem;
+        border-bottom-right-radius: .8rem;
+        padding: .4rem 1rem;
+        font-size: 1.3rem;
+        &:hover{
+          cursor: pointer;
+        }
+      }
+    }
+    .contentPage{ //li
+      border: 1px solid rgb(170, 172, 175);
+    }
+    .page{
+      display: block;
+       padding: .4rem 1rem;
+      color: rgb(96, 97, 99);
+      font-size: 1.3rem;
+      &:hover{
+        background-color: rgb(170, 172, 175);
+        color: v.$blanco;
+      }
+    }
+    .currentPage{
+      background-color: rgb(170, 172, 175);
+      color: v.$blanco;
+    }
+  }
+}

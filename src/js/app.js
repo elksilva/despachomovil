@@ -1,8 +1,15 @@
-document.addEventListener('DOMContentLoaded', function(){ iniciarapp(); });
+//document.addEventListener('DOMContentLoaded', function(){ iniciarapp(); });
+import { pagination, itemsXpagina, cantidadelementos } from "./profesionales.js";
 
-
-
-function iniciarapp(){
-    console.log(1);    
+const configpagination = {
+    pages: Math.ceil(cantidadelementos/itemsXpagina),
 }
+
+pagination(configpagination);
+
+
+
+/*function iniciarapp(){
+    console.log(1);    
+}*/
 

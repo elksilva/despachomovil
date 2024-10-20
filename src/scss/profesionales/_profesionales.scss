@@ -4,7 +4,14 @@
 .tema{
   padding: 6rem 1rem;
   text-align: center;
-  background-color: v.$verde1;
+  background-color: #2a8156;
+  background-image: url('/build/img/HOME/curva1.png');
+  background-position: 60% 95%;
+  background-repeat: no-repeat;
+  background-size: 120%;
+  @include m.telefono{
+    background-position: 60% 52%;
+  }
   h3{
     color: v.$blanco;
     font-weight: 500;
@@ -24,26 +31,93 @@
 
 .profesionales{
   background-color: v.$blanco;
+  padding: 2rem 0 1rem 0;
+
+  .camposProfesionales{
+    padding: 4rem 0rem 6rem 0rem;
+    @include m.contenedor;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include m.telefono{
+      padding: 4rem 2rem 6rem 2rem;
+    }
+    .campoProfesional{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: .3rem;
+      .tipoFiltro{
+        color: rgb(19, 52, 73);
+        font-weight: 700;
+      }
+      .camposelect{
+        width: 18rem;
+        border-radius: 1rem;
+        outline: none;
+        &:focus{
+          border: 1px solid rgb(19, 52, 73);
+        }
+        color:lightslategrey;
+        font-size: 1.2rem;
+        padding: 0rem 1rem;
+      }
+    }
+  }
   
   .grid-profesionales{
-    @include m.contenedor;
-    @include m.grid(3, 1rem);
+    width: 95%;
+    max-width: 880px;
+    margin: 0 auto;
+    @include m.grid(1, 1rem);
+    justify-items: center;
+    @include m.tabletxs{
+      @include m.grid(2, 1rem);
+      row-gap: 2.4rem;
+    }
+    @include m.tabletxl{
+      @include m.grid(3, 1rem);
+      row-gap: 2.4rem;
+    }
+    @include m.desktop{
+      @include m.grid(3, 1rem);
+      row-gap: 2.4rem;
+    }
+    .oneProfesional{
+      display: none;
+    }
     .profesional{
-      height: 10rem;
-      background-color: aqua;
+      overflow: hidden;
+      border-radius: 2rem;
+      height: 15rem;
+      width: 27rem;
+      background-color: rgb(16, 44, 63);
       display: flex;
       .imgprofesional{
-        width: 10rem;
+        width: 12rem;
+        object-fit: cover;
       }
       .infoprofesional{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 1rem 2rem;
         .nombreProfesional{
-
+          color: v.$amarillo;
+          font-size: 1.2rem;
+          font-weight: 600;
         }
         .profesion{
-
+          color: v.$blanco;
+          font-size: 1rem;
+          margin: .6rem 0;
         }
         .verperfil{
-
+          i{
+            color: v.$amarillo;
+          }
         }
       }
     }
