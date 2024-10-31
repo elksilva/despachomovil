@@ -1,1 +1,1 @@
-function iniciarapp(){console.log(1)}document.addEventListener("DOMContentLoaded",(function(){iniciarapp()}));
+function iniciarapp(){console.log(1)}document.addEventListener("DOMContentLoaded",(function(){iniciarapp()}));const hamburger=document.querySelector(".header__hamburger"),nav=document.querySelector(".header__nav");hamburger.addEventListener("click",()=>{nav.classList.toggle("active")});
