@@ -1,4 +1,4 @@
-//document.addEventListener('DOMContentLoaded', function(){ iniciarapp(); });
+document.addEventListener('DOMContentLoaded', function(){ iniciarapp(); });
 import { pagination, itemsXpagina, cantidadelementos } from "./profesionales.js";
 import { tiporegistros } from "./registro.js";
 
@@ -10,9 +10,9 @@ pagination(configpagination);
 
 
 
-/*function iniciarapp(){
+function iniciarapp(){
     console.log(1);    
-}*/
+}
 
 const hamburger = document.querySelector('.header__hamburger');
 const nav = document.querySelector('.header__nav');
