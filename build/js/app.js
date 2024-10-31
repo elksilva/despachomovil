@@ -1,1 +1,1 @@
-import{pagination,itemsXpagina,cantidadelementos}from"./profesionales.js";const configpagination={pages:Math.ceil(cantidadelementos/itemsXpagina)};pagination(configpagination);
+import{pagination,itemsXpagina,cantidadelementos}from"./profesionales.js";import{tiporegistros}from"./registro.js";const configpagination={pages:Math.ceil(cantidadelementos/itemsXpagina)};pagination(configpagination);

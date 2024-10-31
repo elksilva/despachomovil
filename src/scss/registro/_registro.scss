@@ -1,0 +1,101 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.registro{
+  background-image: url('/build/img/FORMULARIOS/FONDO.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 40rem;
+  @include m.tabletxl{
+    height: 60rem;
+  }
+  .col1{
+    flex-basis: 25%;
+  }
+  .col2{
+    padding-right: 2rem;
+    flex: 1;
+    position: relative;
+    display: grid;
+    place-items: center;
+    .imgcol2{
+      position: absolute;
+      left: 0%;
+      transform: translateX(-50%);
+      height: 100%;
+    }
+    .btns-formularios{
+      display: flex;
+      gap: 1rem;
+      .tiporegistro{
+        width: 12rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .btn-formulario{
+          width: 10rem;
+          height: 10rem;
+          background-color: v.$azuldark;
+          border-radius: 50%;
+        }
+      }
+      p{
+        color: v.$blanco;
+        text-align: center;
+        padding: 0 0rem;
+        font-size: 1.8rem;
+      }
+    } //fin btns-formularios
+
+    .contenform{
+      display: none;
+      max-width: 45rem;
+      width: 100%;
+      background-color: v.$blanco;
+      .iconoregistro{
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        //width: 64%;
+        h2{
+          line-height: 1;
+          color: v.$azuldark;
+        }
+      }
+      .textabogadoconta{
+        padding: 1rem;
+      }
+    }
+
+    .mostrarformulario{
+      display: block;
+    }
+
+    .textespecialidad{
+      color: v.$azuldark;
+      font-weight: 500;
+      font-size: 1.2rem;
+      margin: 0;
+    }
+    .contentbtn-si-no{
+      display: flex;
+      gap: 1rem;
+      input[type=radio]{
+        display: none;
+      }
+      input[type=radio]:checked+label{
+        background-color: v.$azuldark;
+        color: v.$blanco;
+        border: 1px solid v.$azuldark;
+      }
+      .inputespecialidad{
+       flex: 1;
+      }
+    }
+    .contentsubmit{
+      display: flex;
+      gap: 4rem;
+    }
+  } //fin col2
+}

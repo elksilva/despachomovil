@@ -18,16 +18,19 @@ function paginate(items, itemsXpagina, paginaActual){
 paginate(items, itemsXpagina, paginaActual);
 
 export const pagination = (attribute)=>{
-  totalpaginas = attribute.pages;
-  let template =`<li class="contentbtnAnterior"><button class="btnAnterior"> <i class="fa-solid fa-angle-left"></i> Anterior </button></li>`;
-  for (let i = 1; i <= attribute.pages; i++) {
-    template += `<li class="contentPage"><a href="#" class="page ${i==1?'currentPage':''}" data-nPage="${i}">${i}</a></li>`;
+  if(paginationWrapper){
+    totalpaginas = attribute.pages;
+    let template =`<li class="contentbtnAnterior"><button class="btnAnterior"> <i class="fa-solid fa-angle-left"></i> Anterior </button></li>`;
+    for (let i = 1; i <= attribute.pages; i++) {
+      template += `<li class="contentPage"><a href="#" class="page ${i==1?'currentPage':''}" data-nPage="${i}">${i}</a></li>`;
+    }
+    template += `<li class="contentbtnSiguiente"><button class="btnSiguiente"> Siguiente <i class="fa-solid fa-angle-right"></i> </button></li>`;
+    paginationWrapper.innerHTML = template;
   }
-  template += `<li class="contentbtnSiguiente"><button class="btnSiguiente"> Siguiente <i class="fa-solid fa-angle-right"></i> </button></li>`;
-  paginationWrapper.innerHTML = template;
 }
 
 ////////////////////// evento a los botones del paginador ////////////////////////
+if(paginationWrapper)
 paginationWrapper.addEventListener('click', e=>{
   e.preventDefault();
   if(e.target.classList.contains('page')){
@@ -64,8 +67,10 @@ function resaltarbtnspaginador(pagina){
 
 
 /////////////////////// fltros ////////////////////////////
-selectCargo.addEventListener('change', aplicarfiltros);
-selectEspecialidad.addEventListener('change', aplicarfiltros);
+if(selectCargo&&selectEspecialidad){
+  selectCargo.addEventListener('change', aplicarfiltros);
+  selectEspecialidad.addEventListener('change', aplicarfiltros);
+}
 
 function aplicarfiltros(){
   const cargoseleccionado = selectCargo.value;

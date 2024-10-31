@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asesoria Profesional y legal | DespachoMovil</title>
+    <meta name="title" name="Asesoria Profesional y legal | DespachoMovil">
+    <meta name="description" content="Especialidades del dereho, soluciones juridicas y contables que puedes encontrar en DespachoMovil">
+    
+    <link rel="canomical" href="https://despachomovil.com/">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+
+    <link rel="preload" href="/build/css/estilos.css" type="style">
+    <link rel="stylesheet" href="/build/css/estilos.css">
+    <link rel="icon" type="image/png" href="/build/img/"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+
+<body>
+    
+    <header class="header">
+        <div class="header__logo">
+            <img src="/build/img/Logo Despacho Móvil.png" alt="Logo Despacho Móvil">
+        </div>
+        <nav class="header__nav">
+            <a href="#">Home</a>
+            <a href="#">Profesionales</a>
+            <a href="#">Registro</a>
+            <a href="#" class="btn-contacto">
+                <img src="/build/img/PROFESIONALES/Botón contacto.png" alt="Botón de contacto">
+            </a>
+            <div class="header__social">
+                <a href="#">
+                    <img src="/build/img/PROFESIONALES/Icono Facebook.png" alt="Redes sociales">
+                </a>
+
+                <a href="#">
+                    <img src="/build/img/PROFESIONALES/Icono Instagram.png" alt="Redes sociales">
+                </a>
+
+                <a href="#">
+                    <img src="/build/img/PROFESIONALES/Icono LinkedIn.png" alt="Redes sociales">
+                </a>
+            </div>
+        </nav>
+        <!-- Botón menú hamburguesa para móviles -->
+        <div class="header__hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <div class="registro">
+      <div class="col1"></div>
+      <div class="col2">
+        <img class="imgcol2" src="/build/img/FORMULARIOS/FOTO.png" alt="">
+
+        <div class="btns-formularios">
+            <div class="tiporegistro">
+                <div class="btn-formulario" id="btn-abogadosycontadores">
+                    <img src="/build/img/FORMULARIOS/BOTÓN ABOGADOS Y CONTADORES.png" alt="">
+                </div>
+                <p>Abogados y contadores</p>
+            </div>
+            <div class="tiporegistro">
+                <div class="btn-formulario" id="btn-empresas">
+                    <img src="/build/img/FORMULARIOS/BOTÓN EMPRESAS Y OTROS.png" alt="">
+                </div>
+                <p>Empresas y otros profesionales</p>
+            </div>
+            <div class="tiporegistro">
+                <div class="btn-formulario" id="btn-ciudadanos">
+                    <img src="/build/img/FORMULARIOS/BOTÓN CIUDADANOS.png" alt="">
+                </div>
+                <p>Ciudadanos</p>
+            </div>
+        </div>
+
+        <div id="form-abogadoContadores" class="contenform">
+            <div class="iconoregistro">
+                <img src="/build/img/FORMULARIOS/ICONO ABOGADOS Y CONTA.png" alt="">
+                <h2 style="width: 50%;">Abogados y contadores</h2>
+            </div>
+            <p class="textabogadoconta">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+                erat volutpat.</p>
+            <form class="formulario" action="">
+                <input class="formulario__input" type="text" placeholder="Nombre">
+                <input class="formulario__input" type="number" placeholder="Cedula">
+                <input class="formulario__input" type="text" placeholder="Tarjeta profesional (licencia temporal)">
+                <input class="formulario__input" type="text" placeholder="Universidad de la que es egresado">
+                <input class="formulario__input" type="text" placeholder="Ciudad ne la que ejerce su actividad profesional">
+
+                <p class="textespecialidad">Cuenta con especialidad?</p>
+                <div class="contentbtn-si-no">
+                    <input id="especialidad-si" type="radio" name="especialidad">
+                    <label class="btn-md btn-amarillo" for="especialidad-si">Si</label>
+                    <input id="especialidad-no" type="radio" name="especialidad">
+                    <label class="btn-md btn-amarillo" for="especialidad-no">No</label>
+                    <input class="formulario__input inputespecialidad" type="text" placeholder="Especialidad o especialidades">
+                </div>
+                <div class="contentsubmit">
+                    <input class="btn-md btn-amarillo" type="submit" value="Registrarme">
+                    <button type="button" class="btn-md btn-amarillo volver">Volver</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="form-empresas" class="contenform">
+            <div class="iconoregistro">
+                <img src="/build/img/FORMULARIOS/ICONO EMPRESAS.png" alt="">
+                <h2 style="width: 66%;">Empresas y otros profesionales</h2>
+            </div>
+            <p class="textabogadoconta">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+                erat volutpat.</p>
+            <form class="formulario" action="">
+                <input class="formulario__input" type="number" placeholder="NIT">
+                <input class="formulario__input" type="text" placeholder="Nombre">
+                <input class="formulario__input" type="text" placeholder="Especialidad o especialidades">
+                <input class="formulario__input" type="text" placeholder="Tiempo de ejercicio">
+                <input class="formulario__input" type="email" placeholder="Correo electronico">
+                <input class="formulario__input" type="text" placeholder="Pais">
+                <input class="formulario__input" type="text" placeholder="Ciudad">
+
+                <div class="contentsubmit">
+                    <input class="btn-md btn-amarillo" type="submit" value="Registrarme">
+                    <button type="button" class="btn-md btn-amarillo volver">Volver</button>
+                </div>
+            </form>
+        </div>
+
+      </div>
+    </div>
+
+    
+    
+
+    
+
+    <footer class="footerBar">
+        <div class="footerBar__superior">
+            <div class="superiorContent">
+                <img src="/build/img/PROFESIONALES/Logo Santander.png" alt="">
+                <img src="/build/img/PROFESIONALES/Logos Secretaria.png" alt="">
+            </div>          
+        </div>
+        <div class="footerBar__inferior">
+            <div class="footerBar__inferiorContent">
+                <div class="footerBar__nav">
+                    <img src="/build/img/Logo Despacho Footer.png" alt="">
+                    <nav>
+                        <a href="">Home</a>
+                        <a href="registro.html">Contacto</a>
+                        <a href="">PQRS</a>
+                        <a href="">Transparencia</a>
+                    </nav>
+                </div>
+                <div class="footerBar__suscripcion">
+                    <div class="suscribir">
+                        <label class="textSuscribir" for="">Suscribete a nuestro Newsletter</label>
+                        <input class="campoSuscribir" type="email" placeholder="your email address">
+                    </div>
+                    <input class="inputSuscribir btn-md btn-amarillo" type="submit" value="suscribir">
+                </div>
+            </div>
+            <div class="footerBar__politicas">
+                <div>
+                    <a href="" class="politica">Politicas de privacidad</a>
+                    <a href="" class="politica">Condiciones de uso</a>
+                    <a href="" class="politica">Legal</a>
+                </div>
+                <a href="" class="allright">DespachoMovil ©2024 Todos los derecohos reservados</a>
+            </div>
+            <div class="logoGov">
+                <img src="/build/img/PROFESIONALES/Logo Gov.png" alt="">
+            </div>
+        </div> <!-- fin footer inferior-->
+    </footer>
+    
+    <!--<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> efecto de escritura-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="/build/js/app.js"></script>
+</body>
+</html>
